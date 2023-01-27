@@ -5,7 +5,7 @@
 画像内右図：csv 形式に変換後のデッキリスト  
   
 入力サンプルファイル：textDeckImage_sample.jpg  
-出力サンプルファイル：result_sample.jpg  
+出力サンプルファイル：result_sample.csv  
 
 ## Quick Start
 ### 1. Google Vision API の設定
