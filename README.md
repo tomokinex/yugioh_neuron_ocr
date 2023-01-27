@@ -14,7 +14,12 @@ https://dev.classmethod.jp/articles/google-cloud_vision-api/
 ### 2. Google Vision API key の登録  
 ダウンロードした API key のパスを Makefile 4行目に記述する
 
-### 3. 実行
+### 3. 依存ライブラリのダウンロード
+```shell
+    make init
+```
+
+### 4. 実行
 ```shell
     make run
 ```
@@ -34,3 +39,6 @@ main.py 内 27 行目に入力画像ファイル名が記述してあるので�
 ```shell
     make scraping
 ```
+
+## License
+TODO
