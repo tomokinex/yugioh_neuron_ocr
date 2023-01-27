@@ -42,7 +42,7 @@ if __name__ == "__main__":
     result_num.extend(trap_nums)
     result_num.extend(exmons_nums)
 
-    result_file = open("result3.csv", mode='w', encoding='utf-8')
+    result_file = open("result.csv", mode='w', encoding='utf-8')
     for s, n in zip(result_name, result_num):
         result_file.write(''+ s + ',' + str(n) + '\n')
     result_file.close()
