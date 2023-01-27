@@ -10,12 +10,16 @@ def detect_text(path):
 
     response = client.text_detection(image=image)
     texts = response.text_annotations
-    return texts[0].description.split("\n")
+
+    if not texts:
+        return []
+    else:
+        return texts[0].description.split("\n")
 
 if __name__ == "__main__":
     from PIL import Image
-    img = Image.open('textDeckImage1.jpg') 
-    img_mons = img.crop((206,412, 714,1671))
+    img = Image.open('textDeckImage.jpg')
+    img_mons = img.crop((206,412, 714, 1671))
     img_mons.save("temp.jpg")
 
     result = detect_text('temp.jpg')
