@@ -1,8 +1,8 @@
 import string_comp
 import re
 def refactor_name(str, namelist):
-    result_score = 0.0
-    result_word = "Nothing"
+    result_score = 0.85 #TODO 
+    result_word = str
 
     for n in namelist[0]:
         t = string_comp.string_comp(str, n)
@@ -15,15 +15,17 @@ def refactor_name(str, namelist):
 def refactor_num(array):
     ret_array = []
     for s in array:
-        if len(s) > 3 and not re.search('[0-9]', s):
+        #TODO 数値判定が怪しい
+        if len(s) > 3:
             ret_array.append(s)
-        elif len(s) == 1:
-            ret_array.append(int(s))
-        else:
-            chars = list(s)
-            for char in chars:
-                if char.isdigit():
-                    ret_array.append(int(char))
+        elif re.search('[0-9]', s):
+            if len(s) == 1:
+                ret_array.append(int(s))
+            else:
+                chars = list(s)
+                for char in chars:
+                    if char.isdigit():
+                        ret_array.append(int(char))
 
     return ret_array
 
@@ -38,4 +40,5 @@ if __name__ == "__main__":
     for s in sample:
         word, score = refactor_name(s, namelist)        
         print(word)
+
 
