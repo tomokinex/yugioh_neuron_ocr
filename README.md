@@ -3,6 +3,9 @@
 ![sample1](_pic/sample_output.jpg)
 画像内左図：遊戯王ニューロンからの出力されたデッキリスト  
 画像内右図：csv 形式に変換後のデッキリスト  
+  
+入力サンプルファイル：textDeckImage_sample.jpg  
+出力サンプルファイル：result_sample.jpg  
 
 ## Quick Start
 ### 1. Google Vision API の設定
