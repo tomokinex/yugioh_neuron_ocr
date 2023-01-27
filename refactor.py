@@ -1,11 +1,11 @@
-import stringcomp
+import string_comp
 import re
 def refactor_name(str, namelist):
     result_score = 0.0
     result_word = "Nothing"
 
     for n in namelist[0]:
-        t = stringcomp.string_comp(str, n)
+        t = string_comp.string_comp(str, n)
         if t > result_score:
             result_score = t
             result_word = n
