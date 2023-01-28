@@ -1,6 +1,6 @@
 # 遊戯王ニューロンOCR
 遊戯王ニューロンから出力されるデッキリストの jpeg 画像を csv 形式のテキストデータに変換するプロジェクト  
-![sample1](_pic/sample_output.jpg)
+![sample1](_pic/sample_output.png)
 画像内左図：遊戯王ニューロンからの出力されたデッキリスト  
 画像内右図：csv 形式に変換後のデッキリスト  
   
@@ -42,6 +42,3 @@ main.py 内 27 行目に入力画像ファイル名が記述してあるので�
 ```shell
     make scraping
 ```
-
-## License
-TODO
