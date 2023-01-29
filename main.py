@@ -12,7 +12,8 @@ def image2text(img, size, index):
 
     result = refactor.refactor_num(result)
     if len(result) % 2 != 0 : 
-        #TODO error 条件が緩すぎる & error メッセージの整備
+        # result.pop()
+        # TODO error 条件が緩すぎる & error メッセージの整備
         print("ERROR")
         print(result)
         exit()
@@ -30,7 +31,7 @@ def image2text(img, size, index):
 if __name__ == "__main__":
     base_width = 1785
     base_height = 2526
-    img = Image.open('textDeckImage6.jpg')
+    img = Image.open('textDeckImage_sample.jpg')
     img = img.resize((base_width, base_height))
     mons_names, mons_nums = image2text(img, (206,412, 714,1671), 0)
     magic_names, magic_nums = image2text(img, (715,412, 1225,1671), 1)
